@@ -142,6 +142,11 @@ EOF
 
 rm -rf /tmp/src
 
+# Install RISE extension for doing slide-shows
+
+jupyter-nbextension install rise --py --sys-prefix
+jupyter-nbextension enable rise --py --sys-prefix
+
 # Fixup permissions on directories and files.
 
 fix-permissions /opt/app-root
